@@ -1,0 +1,6 @@
+query PostTitles {
+  posts {
+    title
+  }
+}
+

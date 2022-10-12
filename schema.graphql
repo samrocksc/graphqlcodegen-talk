@@ -1,0 +1,16 @@
+type Author {
+  firstName: String!
+  id: Int!
+  lastName: String!
+  posts(findTitle: String): [Post]
+}
+
+type Post {
+  author: Author
+  id: Int!
+  title: String!
+}
+
+type Query {
+  posts: [Post]
+}
